@@ -1,0 +1,34 @@
+﻿// See https://aka.ms/new-console-template for more information
+using System.Globalization;
+
+Console.Write("tady to vám ukáže kolik máte mincí a bankovek, zadejte kolik máte peněz: ");
+int no = Convert.ToInt32(Console.ReadLine());
+String n = no.ToString();
+int x = 0;
+int y, z, a, b, c, d, e, f, g, h, i;
+Console.WriteLine();
+x = no % (5000);
+Console.WriteLine(" " + no / 5000 + "krát 5000");
+y = x % (2000);
+Console.WriteLine(" " + x / 2000 + "krát 2000");
+z = y % (1000);
+Console.WriteLine(" " + y / 1000 + "krát 1000");
+a = z % (500);
+Console.WriteLine(" " + z / 500 + "krát 500");
+b = a % (200);
+Console.WriteLine(" " + a / 200 + "krát 200");
+c = b % (100);
+Console.WriteLine(" " + b / 100 + "krát 100");
+d = c % (50);
+Console.WriteLine(" " + c / 50 + "krát 50");
+e = d % (20);
+Console.WriteLine(" " + d / 20 + "krát 20");
+f = e % (10);
+Console.WriteLine(" " + e / 10 + "krát 10");
+g = f % (5);
+Console.WriteLine(" " + f / 5 + "krát 5");
+h = g % (2);
+Console.WriteLine(" " + g / 2 + "krát 2");
+i = h % (1);
+Console.WriteLine(" " + h / 1 + "krát 1");
+Console.Read();
